@@ -7,6 +7,14 @@
 $ yarn
 ```
 
+### Deploy
+
+```shell
+# Start Ganache first
+
+$ yarn deploy
+```
+
 ### Testing
 
 ```shell
