@@ -1,0 +1,9 @@
+
+.ThemeToggle {
+    
+    @apply text-black opacity-60 hover:opacity-100;
+    @apply dark:text-gray-200;
+    @apply transition-opacity duration-500 ease-in-out;
+    @apply cursor-pointer;
+    
+}

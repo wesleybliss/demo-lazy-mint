@@ -1,0 +1,6 @@
+[
+    {
+        "pattern": "http://localhost(.*)",
+        "enabled": true
+    }
+]

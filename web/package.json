@@ -1,0 +1,38 @@
+{
+  "name": "lazymintdemo",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "yarn contracts && vite --host --force",
+    "build": "yarn contracts && vite build",
+    "serve": "yarn contracts && vite preview",
+    "contracts": "cp ../contract/build/contracts/Demo.json ./contracts/; ./bin/minify-contracts.js"
+  },
+  "dependencies": {
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "process": "^0.11.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "6",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.4",
+    "web3": "^1.7.3"
+  },
+  "devDependencies": {
+    "@forminator/react-wire": "^0.5.0-alpha.1",
+    "@vitejs/plugin-react": "^1.2.0",
+    "autoprefixer": "^10.4.0",
+    "classnames": "^2.3.1",
+    "postcss": "^8.4.5",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^14.0.2",
+    "postcss-url": "^10.1.3",
+    "prop-types": "^15.8.1",
+    "react-icons": "^4.3.1",
+    "react-wire-persisted": "^1.2.0",
+    "tailwindcss": "^3.0.2",
+    "vite": "^2.7.2",
+    "vite-plugin-svgr": "^1.1.0"
+  }
+}

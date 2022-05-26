@@ -1,0 +1,20 @@
+
+.Home {
+    
+    @apply w-full grid grid-cols-2 gap-4;
+    @apply border border-gray-300 rounded;
+    
+    th, td {
+        @apply p-4 border-b border-gray-300;
+    }
+    
+    th {
+        @apply text-right;
+    }
+    
+    td {
+        @apply text-left;
+    }
+    
+}
+    

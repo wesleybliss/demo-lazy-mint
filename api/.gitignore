@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+yarn-error.log
+dist
+.env
+
+/contracts/**
+!/contracts/.gitkeep
+
+/src/contracts/**
+!/src/contracts/.gitkeep

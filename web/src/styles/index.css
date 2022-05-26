@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-Roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 { font-size: 2.099rem; }
+h2 { font-size: 1.575rem; }
+h3 { font-size: 1.313rem; }
+h4 { font-size: 1.05rem; }
+h5 { font-size: 0.875rem; }
+h6 { font-size: 0.7875rem; }
+
+.scrollbar-minimal::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scrollbar-minimal::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.scrollbar-minimal::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9;
+    outline: 1px solid #708090;
+}
+
+.absolute-centered {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+}
+
+button {
+    @apply px-6 py-4 font-bold border border-gray-300 bg-blue-200 rounded;
+    @apply transition-all ease-in-out duration-300;
+    &:hover {
+        @apply bg-blue-400;
+    }
+}

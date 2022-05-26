@@ -1,0 +1,13 @@
+
+.App {
+    
+    @apply w-full min-h-screen overflow-y-auto;
+    @apply flex flex-col text-black bg-gray-100;
+    
+    article {
+        @apply w-full p-6 mx-auto;
+        @apply flex flex-col items-center;
+        @apply text-center;
+    }
+    
+}

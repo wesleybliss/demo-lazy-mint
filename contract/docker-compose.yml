@@ -1,0 +1,26 @@
+version: '3.6'
+services:
+  
+  contract:
+    image: node:alpine
+    container_name: digitalsapiens-contract
+    restart: on-failure
+    # env_file: .env
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - .:/contract
+    networks:
+      - dolce
+    logging:
+      driver: json-file
+      options:
+        max-file: "5"
+        max-size: 10m
+    command: yarn deploy:beta
+    working_dir: /contract
+
+networks:
+  dolce:
+    external:
+      name: dolce

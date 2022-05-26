@@ -1,0 +1,25 @@
+
+.Navbar {
+    
+    @apply w-full max-w-screen-2xl mx-auto;
+    @apply flex items-center content-center pl-4 pb-4;
+    @apply z-10;
+    
+    .NavLink {
+        @apply mx-3 px-1 pt-4;
+        @apply text-black opacity-60 hover:opacity-100;
+        @apply dark:text-gray-200;
+        @apply text-lg font-bold;
+        @apply transition-opacity duration-500 ease-in-out;
+    }
+    
+    .branding {
+        @apply pt-4;
+        @apply flex flex-col items-center content-center;
+        @apply text-black opacity-60 hover:opacity-100;
+        @apply dark:text-gray-200;
+        @apply text-lg font-bold;
+        @apply transition-opacity duration-500 ease-in-out;
+    }
+    
+}
